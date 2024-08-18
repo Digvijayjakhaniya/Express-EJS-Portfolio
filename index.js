@@ -1,5 +1,9 @@
 import express from 'express'
-import {join} from 'path'
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 import web from './routes/web.js'
 import uc from './middlewares/uc-middleware.js'
 
@@ -9,8 +13,8 @@ const port = 3000
 // uder contruction code line
 // app.use(uc)
 
-
-app.set('view engine','ejs')
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 app.use('/',web)
 app.use(express.static('public'))
 
