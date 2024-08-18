@@ -1,0 +1,36 @@
+<%- include('./includes/header.ejs') %>
+
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-sm-2">
+            <%- include('./includes/sidebar.ejs',{'page' : 'services'}) %>
+        </div>
+        <div class="col-sm-10">
+            <div class="container mt-5">
+                <h1 class="text-warning mb-5 border-bottom"> Services </h1>
+                <div class="row text-center text-white mb-5">
+                    <div class="col-sm-6">
+                        <i class="fas fa-pencil fa-2x mb-3 i-color"></i>
+                        <h2 class="mb-5">UI/UX Design</h2>
+                        <p class="ss-color">Landing Pages</p>
+                        <p class="ss-color">Web Design</p>
+                        <p class="ss-color">User Flow</p>
+                        <p class="ss-color">Wireframing</p>
+                        <p class="ss-color">Prototyping</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa fa-code fa-2x mb-3 i-color"></i>
+                        <h2 class="mb-5">Development</h2>
+                        <p class="ss-color">HTML / CSS / JavaScript</p>
+                        <p class="ss-color">React.js</p>
+                        <p class="ss-color">Node.js / Express </p>
+                        <p class="ss-color">PHP / Laravel </p>
+                        <p class="ss-color">MongoDB / MySQL</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<%- include('./includes/footer.ejs') %>

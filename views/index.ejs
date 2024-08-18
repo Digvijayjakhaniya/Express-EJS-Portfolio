@@ -1,0 +1,28 @@
+<%- include('./includes/header.ejs') %>
+
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-sm-2">
+            <%- include('./includes/sidebar.ejs',{'page' : 'home'}) %>
+        </div>
+        <div class="col-sm-10">
+            <div class="mt-5">
+                <div class="text-center">
+                    <img src="/images/photo.jpeg" alt="myImg" class="img-thumbnail" width="250px" height="150px">
+                </div>
+                <div class="mt-5 text-white mx-5 text-justify">
+                    <h1 class="fw-bold st-font">Hello,</h1>
+                    <div class="px-4" style="line-height: 2rem;">
+                        <p class="text-indent:100px">I am <b class="text-warning">Digvijay Jakhaniya</b> As a creative web developer with project-based experience, I can help you develop your website.</p>
+                        <p>I like to craft solid and scalable Fullstack products with great user experiences. I use my passion and skills to develop websites for different agencies and companies. I have expertise in various languages like CSS, HTML, React.js, Node.js, Express, Flutter, PHP, and many more. Always ready to enhance skills and expertise in different domains.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://digvijay.rf.gd" class="btn btn-outline-info mx-5 my-3" target="_blank">Main Portfolio</a>
+                    <a href="/contact" class="btn btn-outline-warning">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./includes/footer.ejs') %>
