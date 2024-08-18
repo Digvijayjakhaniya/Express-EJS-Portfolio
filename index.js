@@ -13,10 +13,10 @@ const port = 3000
 // uder contruction code line
 // app.use(uc)
 
+app.use(express.static('public'))
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use('/',web)
-app.use(express.static('public'))
 
 app.listen(port,(req,res)=>{
     console.log('port run on http://localhost:3000')
